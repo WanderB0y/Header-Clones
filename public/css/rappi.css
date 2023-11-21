@@ -1,6 +1,102 @@
 .rappi{
+    --clr-border: hsl(213, 28%, 92%);
+    --clr-neutral-100:hsl(0, 0%, 100%);
+    --clr-neutral-200:hsl(210, 14%, 97%);
+    --clr-neutral-300: hsl(252, 2%, 42%);
+    --clr-primary-400:hsl(10, 100%, 56%);
+
+
     font-family: 'Nunito', sans-serif;
-    background-color: white;
-    height: 64px;
-    padding: 16px;
+    background-color: var(--clr-neutral-100);
+    padding: 0 16px;
 }
+
+.rappi--bold{
+    font-weight: 800;
+}
+
+.rappi-flex-group{
+    display: flex;
+    align-items: center;
+}
+
+.rappi--container{
+    display: flex;
+    justify-content: space-between;
+}
+.rappi--icon{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.rappi--arrow{
+    display: none;
+}
+
+.rappi__middle-container > a{
+    display: flex;
+    border-left: 1px solid var(--clr-border);
+    border-right: 1px solid var(--clr-border);
+    padding: 4px 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.275rem;
+    color: var(--clr-primary-400);
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+
+.rappi__right-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rappi__label-container{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.rappi__label-container > label{
+    max-width: 720px;
+    background-color: var(--clr-neutral-200);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    height: 44px;
+    border-radius: 6px;
+}
+.rappi__right-container label > input{
+    flex-grow: 1;
+    background-color: var(--clr-neutral-200);
+    border: none;
+}
+
+.rappi--mustache{
+    margin:8px 12px 8px 16px;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+.rappi--search{
+    margin-right: 16px;
+}
+
+.rappi__profile-container{
+    padding: 6px 12px 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid var(--clr-border);
+    color: var(--clr-neutral-300);
+    font-size: 14px;
+}
+.rappi__cart-container{
+    margin-left: 12px;
+}
+

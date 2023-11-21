@@ -15,38 +15,40 @@
 <body>
     <header class="rappi">
         <div class="rappi--container">
-            <div>
+            <div class="rappi__left--container rappi-flex-group">
                 <div>
                     <nav>
-                        <li><a href="#"><img src="./assets/rappi/rappi-hamburger.svg" alt="menu bar"></a></li>
-                        <li><a href="#"><img src="./assets/rappi/rappi-arrow-left-outlined.svg" alt="menu bar"></a></li>
+                        <li class="rappi--hamburger"><a href="#"><img src="./assets/rappi/rappi-hamburger.svg" alt="menu bar"></a></li>
+                        <li class="rappi--arrow"><a href="#"><img src="./assets/rappi/rappi-arrow-left-outlined.svg" alt="menu bar"></a></li>
                     </nav>
                 </div>
                 <div>
                     <a href="#">
-                        <img src="./assets/rappi/rappi.svg" alt="rappi icon">
+                        <img class="rappi--icon" src="./assets/rappi/rappi.svg" alt="rappi icon">
                     </a>
                 </div>
             </div>
-            <div>
+            <div class="rappi__middle-container rappi--bold">
                 <a href="#">
                     <img src="./assets/rappi/rappi-location.svg" alt="location icon">
                     <span>Ciudad de Mexico</span>
                     <img src="./assets/rappi/rappi-arrow-down.svg" alt="">
                 </a>
             </div>
-            <div>
-                <label>
-                    <img src="./assets/rappi/rappi-mustache.svg" alt="">
-                    <input type="text" placeholder="Comida, restaurantes, tiendas, productos,...">
-                    <img src="./assets/rappi/rappi-search.svg" alt="search icon">
-                </label>
-    
-                <div class="rappi__right-container">
-                    <div>
-                        <img src="./assets/rappi/rappi-profile.svg" alt="profile">
-                        <span>Ingreso</span>
-                    </div>
+            <div class="rappi__right-container"> 
+                <div class="rappi__label-container">
+                    <label class="rappi-flex-group">
+                        <img class="rappi--mustache" src="./assets/rappi/rappi-mustache.svg" alt="">
+                        <input type="text" placeholder="Comida, restaurantes, tiendas, productos,...">
+                        <img class="rappi--search" src="./assets/rappi/rappi-search.svg" alt="search icon">
+                    </label>
+                </div>
+
+                <div class="rappi__profile-container">
+                    <img src="./assets/rappi/rappi-profile.svg" alt="profile">
+                    <span class="rappi--bold">Ingreso</span>
+                </div>
+                <div class="rappi__cart-container">
                     <a href="#">
                         <img src="./assets/rappi/rappi-cart.svg" alt="cart">
                     </a>
