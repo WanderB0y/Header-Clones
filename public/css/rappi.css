@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
 }
-.rappi--icon{
+.rappi--icon img{
     margin-left: 16px;
     margin-right: 16px;
 }
@@ -58,21 +58,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding:0 72px;
+        margin: 10px 0;
 }
 
 .rappi__label-container > label{
-    max-width: 720px;
     background-color: var(--clr-neutral-200);
-    flex-grow: 1;
     display: flex;
     align-items: center;
-    height: 44px;
     border-radius: 6px;
+    width: 100%;
+
 }
 .rappi__right-container label > input{
-    flex-grow: 1;
+    width: 100%;
     background-color: var(--clr-neutral-200);
     border: none;
+    padding: 8px 16px 8px 8px;
 }
 
 .rappi--mustache{
@@ -95,8 +97,24 @@
     border-right: 1px solid var(--clr-border);
     color: var(--clr-neutral-300);
     font-size: 14px;
+    margin-left: 16px;
+    flex-shrink: 0;
 }
 .rappi__cart-container{
     margin-left: 12px;
+    flex-shrink: 0;
 }
 
+@media (max-width: 1023px){
+     .rappi__profile-container span, .rappi--icon, .rappi__middle-container{
+        display: none;
+    }
+    .rappi__label-container{
+        padding:0 0 0 32px;
+    }
+}
+@media (max-width: 768px){
+    .rappi__profile-container{
+        border:none;
+    }
+}
