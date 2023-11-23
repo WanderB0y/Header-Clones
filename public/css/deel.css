@@ -1,0 +1,12 @@
+@font-face {
+    font-family: silka-medium;
+    src: url(/public/fonts/deel/silka-medium.woff2);
+  }
+
+.deel--container{
+    font-size: 14px;
+    font-family: silka-medium;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
